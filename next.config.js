@@ -5,15 +5,6 @@ const nextConfig = {
 
 module.exports = nextConfig
 
-// module.exports = {
-//   images: {
-//     remotePatterns: [
-//       {
-//         protocol: 'https',
-//         hostname: 'upload.wikimedia.org',
-//         port: '',
-//         pathname: '/wikipedia/commons/thumb/',
-//       },
-//     ],
-//   },
-// }
+module.exports = {
+  pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
+};
