@@ -1,6 +1,14 @@
-import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import { Container } from '../styles/globals';
+import CountryProvaider from '@/context/Country';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <CountryProvaider>
+      <Container>
+        <Component {...pageProps} />
+      </Container>
+    </CountryProvaider>
+    
+  )
 }
