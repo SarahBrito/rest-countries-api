@@ -25,7 +25,9 @@ const PageDatails = () => {
       {countries.filter((item:any) => item.numericCode == idCountry).map((country:any) => (
           <CountryInfo key={country.numericCod}>
               <CountryImage>
+                <picture>
                 <img src={country.flags.png} alt="Imagem do País" />
+                </picture>
               </CountryImage>
               <CountryDetails>
               <h2>{country.name}</h2>

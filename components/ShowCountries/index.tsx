@@ -44,10 +44,12 @@ const ShowCountries = () => {
             return(
 
               <CardCountry key={index} onClick = {() => showDatails(item.numericCode)}>
-                <img
-                    src={item.flags.png}
-                    alt="Imagem do País"
-                />
+                <picture>
+                  <img
+                      src={item.flags.png}
+                      alt="Imagem do País"
+                  />
+                </picture>
                 <section>
                     <p>{item.name}</p>
                     <p className='info__name'>Population:
