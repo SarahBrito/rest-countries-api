@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Header from '../../components/Header'
+import Header from '../components/Header'
 import GlobalStyle from '../styles/globals'
 import { ThemeProvider } from 'styled-components'
 import dark from '../styles/themes/dark'
-import Filters from '../../components/Filters'
-import ShowCountries from '../../components/ShowCountries'
+import Filters from '../components/Filters'
+import ShowCountries from '../components/ShowCountries'
 import CountryProvaider from '../context/Country'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <CountryProvaider>
         <ThemeProvider theme={dark}>
           <GlobalStyle/>
@@ -27,7 +27,7 @@ export default function Home() {
           </main>
         </ThemeProvider>
       </CountryProvaider>
-      
+
     </>
   )
 }
