@@ -1,5 +1,5 @@
 import GlobalStyle from '../../styles/globals'
-import { Container, CountryInfo, CountryImage, CountryDetails } from './styles'
+import { Container, CountryInfo, CountryImage, CountryDetails } from '../../styles/styles'
 import { ThemeProvider } from 'styled-components'
 import dark from '../../styles/themes/dark'
 import Header from '../../components/Header'
