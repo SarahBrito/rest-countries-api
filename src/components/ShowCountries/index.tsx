@@ -30,6 +30,13 @@ const ShowCountries = () => {
     gap: 64px;
     justify-content: space-between;
 
+    @media (max-width: 790px) {
+      margin: 80px 0 ;
+  }
+
+  @media (max-width: 580px) {
+      justify-content: center;
+  }
     /* Estilos condicionais */
     ${({ condition }) => condition && css`
       justify-content: flex-start;

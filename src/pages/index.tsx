@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import GlobalStyle from '../styles/globals'
+import { MainContainer } from '../styles/globals'
 import { ThemeProvider } from 'styled-components'
 import dark from '../styles/themes/dark'
 import Filters from '../components/Filters'
@@ -21,10 +22,10 @@ export default function Home() {
         <ThemeProvider theme={dark}>
           <GlobalStyle/>
           <Header />
-          <main>
+          <MainContainer>
             <Filters />
             <ShowCountries />
-          </main>
+          </MainContainer>
         </ThemeProvider>
       </CountryProvaider>
 

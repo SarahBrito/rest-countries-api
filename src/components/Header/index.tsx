@@ -1,11 +1,11 @@
-import { Container } from './styles';
+import { HeaderContainer } from './styles';
 
 const Header = () => {
-    return ( 
-        <Container>
+    return (
+        <HeaderContainer>
             Where in the World?
-        </Container>
+        </HeaderContainer>
      );
 }
- 
+
 export default Header;

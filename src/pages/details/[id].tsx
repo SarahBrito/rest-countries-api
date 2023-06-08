@@ -63,9 +63,9 @@ const PageDatails = () => {
                     </span>
                 </p>
               </div>
-              <div className="details__border-countries">
+              {/* <div className="details__border-countries">
                 <p>Border Countries: </p>
-              </div>
+              </div> */}
             </CountryDetails>
           </CountryInfo>
           ))}

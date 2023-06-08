@@ -4,28 +4,55 @@ import styled from "styled-components"
 export const Container = styled.div`
     height: calc(100vh - 70px);
     padding: 0 60px;
-    
+
+    @media (max-width: 1000px) {
+      padding: 20px 0;
+  }
+
     & .button__back {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 132px;
         height: 42px;
-        margin: 72px 0;
+        margin: 100px 0 72px 0;
         background-color: ${props => props.theme.colors.primary};
     }
+
+
 `
 
 export const CountryInfo = styled.div`
   display: flex;
   gap: 132px;
+
+  @media (max-width: 1060px) {
+      gap: 50px;
+  }
+
+  @media (max-width: 1060px) {
+      gap: 50px;
+  }
+
+  @media (max-width: 1000px) {
+      gap: 50px;
+      flex-wrap: wrap;
+  }
 `;
 
 
 export const CountryImage = styled.div`
+  width: 100%;
+  max-width: 550px;
+  min-height: 408px;
+  
+  @media (max-width: 400px) {
+    min-height: 300px;
+  }
+
   & img {
-    width: 558px;
-    height: 408px;
+    width: 100%;
+    min-height: 300px;
   }
 `;
 
@@ -37,7 +64,13 @@ export const CountryDetails = styled.div`
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    
+
+    @media (max-width: 500px) {
+      justify-content: center;
+      flex-direction: column;
+      flex-flow: column;
+  }
+
   }
 
 
@@ -49,7 +82,7 @@ export const CountryDetails = styled.div`
     font-weight: 600;
     margin-bottom: 6px;
     font-size: 14px;
-    
+
   }
 
   & span {
