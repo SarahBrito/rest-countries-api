@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     height: 70px;
-    margin: 80px 0 40px 0;
+    margin: 24px 0;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ export const SearchCountry = styled.div`
   }
 
   @media (max-width: 580px) {
-      margin: 35px 0;
+      margin-bottom: 32px;
   }
 
     input {

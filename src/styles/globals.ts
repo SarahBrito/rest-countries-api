@@ -30,9 +30,10 @@ export default createGlobalStyle`
     }
 `
 export const MainContainer = styled.div`
-  /* border: 1px solid red; */
+
   display: flex;
   flex-direction: column;
+  padding: 12px 24px;
 
   @media (max-width: 580px) {
       gap: 50px
@@ -44,11 +45,7 @@ export const Container = styled.div`
     max-width: 1440px;
     min-width: 375px;
     margin: 0 auto;
-    padding: 0 86px;
-
-    @media (max-width: 725px) {
-      padding: 8px 18px;
-    }
+    
 `
 
 

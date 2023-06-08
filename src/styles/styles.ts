@@ -3,11 +3,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     height: calc(100vh - 70px);
-    padding: 0 60px;
-
-    @media (max-width: 1000px) {
-      padding: 20px 0;
-  }
+    padding: 12px 24px;
 
     & .button__back {
         display: flex;
@@ -15,7 +11,7 @@ export const Container = styled.div`
         align-items: center;
         width: 132px;
         height: 42px;
-        margin: 100px 0 72px 0;
+        margin: 32px 0;
         background-color: ${props => props.theme.colors.primary};
     }
 
@@ -45,7 +41,7 @@ export const CountryImage = styled.div`
   width: 100%;
   max-width: 550px;
   min-height: 408px;
-  
+
   @media (max-width: 400px) {
     min-height: 300px;
   }
