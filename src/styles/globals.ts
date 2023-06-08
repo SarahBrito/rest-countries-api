@@ -36,7 +36,8 @@ export const MainContainer = styled.div`
   padding: 12px 24px;
 
   @media (max-width: 580px) {
-      gap: 50px
+      gap: 50px;
+      overflow-x: hidden;
   }
 `
 
@@ -45,7 +46,11 @@ export const Container = styled.div`
     max-width: 1440px;
     min-width: 375px;
     margin: 0 auto;
-    
+    overflow-x: hidden;
+
+    @media (max-width: 580px) {
+      overflow-x: hidden;
+  }
 `
 
 
