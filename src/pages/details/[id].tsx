@@ -55,7 +55,7 @@ const PageDatails = () => {
                     <span>{country.topLevelDomain}</span>
                   </p>
                   <p className='info__name'>Currencies:
-                    <span>{country.currencies[0].name}</span>
+                    <span>{country.currencies? country.currencies[0].name: 'undefined'}</span>
                   </p>
                   <p className='info__name'>Languages:
                     <span>{country.languages.map((lang:any)=>{

@@ -25,12 +25,9 @@ export const CountryInfo = styled.div`
 
 
   @media (max-width: 1000px) {
+    height: 100vh;
     gap: 32px;
-      flex-wrap: wrap;
-  }
-
-  @media (max-width: 400px) {
-    height: 75vh;
+    flex-wrap: wrap;
   }
 `;
 
@@ -104,7 +101,6 @@ export const CountryDetails = styled.div`
       display: flex;
       gap: 6px;
       flex-wrap: wrap;
-
     }
 
     & .borderCountry {
