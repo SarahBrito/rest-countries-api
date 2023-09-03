@@ -1,17 +1,18 @@
 import { createContext, useContext, useState, useEffect, ChangeEvent } from "react";
 
 
-interface Country {
+export interface Country {
     name: string;
     region:string;
     capital: string;
     subregion: string;
     population: number;
+    alpha3Code: string;
   }
 
 
 interface CountriesContextProps {
-    countries: Array<string>,
+    countries: Country[],
     handleSearchInputChange: (event: ChangeEvent<HTMLInputElement>) => void,
     searchTitle: string,
     getFilteredCountries: (value:string)=> void
